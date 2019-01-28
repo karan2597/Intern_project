@@ -1,0 +1,22 @@
+{
+  "name": "p1",
+  "version": "1.0.0",
+  "description": "It contains info about rendering in server side",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "karan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "egs": "^0.3.1",
+    "ejs": "^2.6.1",
+    "es6-promise": "^4.2.5",
+    "express": "^3.21.2",
+    "fs": "0.0.1-security",
+    "isomorphic-fetch": "^2.2.1",
+    "mongoose": "^5.4.6",
+    "nodemon": "^1.18.9"
+  }
+}

@@ -1,0 +1,301 @@
+
+
+<% include header.html %>
+
+	<body>
+		<div class= "<%= div_name[0] %>" >
+			<div class="<%= div_name[1] %>">
+			<h1>
+				<a class= "<%= link_name[0] %>" href="#">
+					Personal
+				 <span>View</span>
+				</a>
+			</h1>
+			
+			<ul class="<%= ul_name[0] %>">
+				<li style="border-bottom: 2px solid;"> <%=content_list[0]%> </li>
+				<% for(let i=1;i<6;i++) {%>
+					<%if (i===4) { %>
+					<div class="pages"><a class="temp" href="#">Pages</a>
+						<div class="dropdown-content">
+    						<a href=" #id4 ">Blog</a>
+    						<a href=" #id5 ">Projects</a>
+   							 <a href="#id6">Testimonial</a>
+ 						 </div>
+					</div>
+				<% }else{ %>
+					<li><a href=" #id7 "><%=content_list[i]%></a></li>
+				<% }%>
+				<% } %>
+			</ul>
+			</div>
+
+		<div class="<%=div_name[2] %>">
+		<h5> Hi</h5>
+		<h2 class="<%=header_name[0] %>">My Name is <%= name%> </h2>
+		<h4 ><%=desig%></h4>
+		<p class="<%=para_name[0] %>"><%=desc%></p>
+		<button class="<%= btn_name[0] %>">Read More </button>
+	</div>
+
+		</div>
+		
+
+		<div class="<%=abt_div_name[0]%>" id="<%=identity[0]%>">	
+				<h3 class="<%=abt_header_name[0]%>">About Me</h3>
+
+				<div class="<%=abt_div_name[1]%>">
+
+				<div class="<%=abt_div_name[2]%>">
+					<h5>
+						<%=abt_content[0]%>
+					</h5>
+					<span>
+						<%=abt_content[1]%>
+					</span>
+
+					<button class=" <%=abt_btn_name[0]%> ">
+						Download CV
+					</button>
+				</div>
+
+				<div class=" <%=abt_div_name[3]%> "> 
+					<img src="<%=abt_src[0]%>" alt="Unable to open" class="<%=abt_image[0]%>"> 
+				</div>
+
+				
+				<div class=" <%=abt_div_name[4]%> ">
+
+				<% for(let i=0;i<5;i++) {%>
+					<p class="<%= abt_p_name[0]%> "><%=abt_specs[i]%></p>
+				<div class="<%=abt_div_name[5]%>">
+ 				<div class="<%=abt_div_name[6]%> <%=abt_div_name[7+i]%>">
+ 					<%=abt_percent[i]%>
+ 				</div>
+				</div>
+				<% }%>
+
+				</div><!-- for right pos-->
+				</div> <!--for outer div-->
+			 </div>
+
+
+
+			 <div class=" <%=serv_div_name[0]%> " id="<%=identity[1]%>">
+				<h2>Services</h2>
+			<div class="<%=serv_div_name[1]%>">
+  				
+
+				<% for(let i=0;i<6;i++) {%>
+					
+  					<div class="<%=serv_div_name[2]%>">
+					<div class="<%=serv_div_name[3]%>">
+					<%=serv_specs[i]%>
+				</div>
+					<%=serv_content[i]%>
+				</div>
+				<% }%>
+			</div><!-- end of grid containers-->
+		</div> <!--end of service-->
+
+
+		<div class="<%=exp_div_name[0]%> " id="<%=identity[2]%>">
+			<h2>Experience</h2>
+			
+				<% for(let i=0;i<4;i++) {%>
+					<div class=" <%=exp_div_name[1]%> ">
+					<%if (i%2===0) { %>	
+  						<div class="<%=exp_div_name[2]%> ">
+							<%=serv_specs[i]%> 
+							<div class=" <%=exp_div_name[1]%> ">
+								<%=exp_duration[i]%>
+							</div>
+						</div>
+
+						<div class=" <%=exp_div_name[i+4]%> ">
+							<%=exp_content[i]%>;				
+						</div>
+				<% }else{ %>
+					<div class=" <%=exp_div_name[i+4]%> ">
+							<%=exp_content[i]%>;				
+						</div>
+					<div class="<%=exp_div_name[2]%> ">
+						<%=serv_specs[i]%> 
+						<div class=" <%=exp_div_name[1]%> ">
+								<%=exp_duration[i]%>
+						</div>
+					</div>
+				<% } %>
+				</div>
+<% } %>
+</div>	<!--end of exp-->
+
+<div class=" <%=blog_div_name[0]%> " id="id4" >
+
+
+<div class=" <%=blog_div_name[1]%> <%=blog_div_name[2]%> <%=blog_div_name[3]%> ">
+				
+				<div class="<%=blog_div_name[4]%>">
+					<h3>Blog</h3>
+				
+				
+				<div class="<%=blog_div_name[5]%>">
+					<div class="<%=blog_div_name[6]%>">
+						<%=blog_content[0]%>
+						<div class="<%=blog_div_name[7]%>">
+							<%=blog_content[1]%>
+						</div>
+
+						<div class="<%=blog_div_name[8]%>">
+							<div class="<%=blog_div_name[9]%>">
+							<%=blog_content[2]%>
+						</div>
+						<div class=" <%=blog_div_name[10]%> ">
+							<%=blog_content[3]%>
+						</div>
+						</div> <!--end of row class-->
+
+						
+					</div>
+						<div class="<%=blog_div_name[11]%>">
+							<div class="<%=blog_div_name[12]%>">
+								<%=blog_date[0]%>
+								<div class="<%=blog_div_name[13]%>">
+									<%=blog_sub[0]%>
+								</div>
+									<div class="<%=blog_div_name[14]%>">
+										<%=blog_r_content[0]%>
+									</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="<%=proj_div_name[0]%>" id="id5">
+				<h2 class="<%=proj_header_name[0]%>">Projects</h2>
+				<div class="<%=proj_div_name[1]%>">
+					<div class="<%=proj_div_name[2]%>">
+					<% for(let i=0;i<proj_src.length;i++) {%>
+					<img src=" <%=proj_src[i]%> " class=" <%=proj_image[0]%> " alt="Unable to display!">
+				<% }%>
+						
+					</div>
+				</div>
+	</div>
+
+
+
+
+
+			<div class=" <%=test_div_name[0]%>" id="id6" >
+				<h3>Testimonial</h3>
+
+		<div class="<%=test_div_name[1]%>">
+
+		<% for(let i=0;i<test_app.length;i++) {%>
+
+					<div class=" <%=test_div_name[2]%> <%=test_div_name[3]%> ">
+
+			<div class="<%=test_div_name[4]%>">
+					<img src="<%=test_src[0]%>" alt="Unable to display" class=" <%=test_image[0]%> ">	
+				<div class=" <%=test_div_name[5]%> ">
+					<div class=" <%=test_div_name[6]%> ">
+						<h5><%= test_names[i] %></h5>
+						<p class="<%= test_para[0] %>">
+							<%= test_app[i] %>
+						</p>
+					</div>
+					<p class="date">
+						<%= test_date[i] %>
+					</p>
+				</div>
+			</div>
+
+			</div>
+
+				<% }%>
+			
+			<a class="<%= test_link[0]%> " onclick="plusSlides(-1)">&#10094;</a>
+			<a class="<%= test_link[1]%>" onclick="plusSlides(1)">&#10095;</a>
+		</div> 
+
+			<div style="text-align:center">
+			<% for(let i=1;i<=test_app.length;i++) {%>
+					<span class="<%= test_span[0] %>" onclick="currentSlide(i)"></span> 
+				<% }%>
+  			
+		</div>
+</div> 
+	
+
+	<div class=" <%=contact_div_name_l[0]%> " id="id7">
+				<h2>Contact</h2>
+				<div class=" <%=contact_div_name_l[1]%>">
+					<div class=" <%=contact_div_name_l[2]%>">
+						<h5 style="font-size: 28px;margin: 0; margin-bottom: 15px;position: relative; letter-spacing: 1px;">Address Info</h5>
+
+			
+						<div class=" <%=contact_div_name_l[3]%> ">
+							<i class="<%=contact_icons[0]%> "></i>
+							<%=contact_info[0]%> 
+				<% for(let j=0;j<contact_email.length;j++) {%>
+							<div class="<%=contact_div_name_l[4]%>">
+								<%=contact_email[j]%> 
+							</div>
+				<% }%>
+				</div>
+
+						<div class=" <%=contact_div_name_l[3]%> ">
+							<i class="<%=contact_icons[1]%> "></i>
+							<%=contact_info[1]%> 
+				<% for(let j=0;j<contact_phone.length;j++) {%>
+							<div class="<%=contact_div_name_l[4]%>">
+								<%=contact_phone[j]%> 
+							</div>
+				<% }%>
+				</div>
+							<div class=" <%=contact_div_name_l[3]%> ">
+							<i class="<%=contact_icons[2]%> "></i>
+							<%=contact_info[2]%> 
+				<% for(let j=0;j<contact_addr.length;j++) {%>
+							<div class="<%=contact_div_name_l[4]%>">
+								<%=contact_addr[j]%> 
+							</div>
+				<% }%>
+				</div>
+
+			</div>
+						
+
+						<div class="<%=contact_div_name_r[0]%>">
+						<h5 style="font-size: 28px;margin: 0; margin-bottom: 15px;position: relative; letter-spacing: 1px;">Get in touch</h5>
+
+						<form id="f1" method="post" action="/personal">
+
+				<% for(let i=0;i<contact_fields.length;i++) {%>
+
+				
+					<p>
+							<i class=" <%=contact_f_icons[i]%> "></i><span class=" <%=contact_span[0]%> "><%=contact_fields[i]%> <input type="<%=contact_fields[i]%>" class="<%=contact_details[0]%>" placeholder="<%=contact_fields[i]%>" name="<%=contact_id[i]%>" required="Required field"></span>
+					</p>
+				
+					
+				<% }%>
+
+							<p>
+								<input type="submit" name="submit" class="<%=contact_details[1]%>" >
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+
+
+<% include footer.html %>
